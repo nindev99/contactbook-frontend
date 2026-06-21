@@ -18,6 +18,11 @@ const routes = [
     component: () => import('../views/ContactEdit.vue'),
     props: true,
   },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'NotFound',
+    component: () => import('../views/NotFound.vue'),
+  },
 ]
 
 const router = createRouter({
